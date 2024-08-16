@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    box-sizing: inherit;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+ol,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper{
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1150px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
