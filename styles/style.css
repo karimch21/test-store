@@ -262,7 +262,7 @@
     overflow-y: auto;
 }
 
-.hidden-menu__wrap{
+.hidden-menu__wrap {
     margin-bottom: 62px;
 }
 
@@ -373,4 +373,126 @@
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 13px;
+}
+
+.popular {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.popular__inner {
+    padding-right: 160px;
+    padding-top: 191px;
+    max-width: 1368px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #417A82;
+    position: relative;
+}
+
+.popular__inner::before {
+    content: 'Популярное';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 300px;
+    line-height: 185px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-family: "Cormorant Infant", serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    z-index: 2;
+    opacity: 0.05;
+}
+
+.popular__inner::after {
+    content: "";
+    width: 160px;
+    height: 100%;
+    background-color: #052E4C;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.popular__items {
+    max-width: 1120px;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: minmax(auto, 308px) minmax(auto, 308px) minmax(auto, 504px);
+}
+
+.popular__item {
+    padding-top: 40px;
+    padding-left: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 240px;
+}
+
+.popular__item-grids-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(../img/popular1.jpg);
+}
+
+.popular__item-grids-2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    min-height: 480px;
+    background-image: url(../img/popular2.jpg);
+}
+
+.popular__item-grids-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../img/popular3.jpg);
+}
+
+.popular__item-grids-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(../img/popular4.jpg);
+}
+
+.popular__item-title {
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #052e4c;
+    font-family: "Cormorant Infant", serif;
+}
+
+.popular__item-title span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #052e4c;
+}
+
+.popular__item-title--strong {
+    font-weight: 700;
+}
+
+.popular__item-title--color {
+    color: #ffffff;
 }
