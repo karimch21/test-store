@@ -438,6 +438,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 240px;
+    display: block;
 }
 
 .popular__item-grids-1 {
