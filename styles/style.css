@@ -379,6 +379,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 135px;
 }
 
 .popular__inner {
@@ -496,4 +497,19 @@
 
 .popular__item-title--color {
     color: #ffffff;
+}
+
+.products-slider__slide{
+    max-width: 224px;
+    width: 100%;
+}
+
+.products-slider__img-wrap{
+    max-width: 224px;
+    width: 100%;
+    max-height: 278px;
+    overflow: hidden;
+}
+.products-slider__img{
+    object-fit: contain;
 }
