@@ -10,9 +10,7 @@
 
 .header {
     /* position: relative; */
-
 }
-
 
 .header__main-container {
     padding: 36px 21px 25px;
@@ -49,7 +47,8 @@
     background-color: #417a82;
 }
 
-.burger-menu div {}
+.burger-menu div {
+}
 
 .burger-menu::before,
 .burger-menu::after {
@@ -87,7 +86,6 @@
     position: relative;
     font-size: 0;
 }
-
 
 .search__inp--hide {
     display: none;
@@ -226,7 +224,7 @@
     left: 50%;
     bottom: auto;
     transform: translate(-50%, -50%);
-    color: #052E4C;
+    color: #052e4c;
     font-weight: 400;
     font-size: 13px;
     font-family: "PT Sans", sans-serif;
@@ -247,8 +245,6 @@
     display: none;
 }
 
-
-
 .header-main__hidden {
     padding: 31px 24px 29px;
     min-width: 224px;
@@ -257,7 +253,7 @@
     left: -100%;
     top: 0;
     z-index: 10000;
-    background-color: #FEFEFE;
+    background-color: #fefefe;
     align-items: flex-start;
     overflow-y: auto;
 }
@@ -268,7 +264,7 @@
 
 .hidden-menu__contact {
     margin-bottom: 24px;
-    color: #417A82;
+    color: #417a82;
     width: 100%;
     text-align: center;
 }
@@ -312,7 +308,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .menu__link-text {
@@ -321,7 +316,7 @@
 }
 
 .menu__link-text--color {
-    color: #B84C74;
+    color: #b84c74;
 }
 
 .hidden-menu__search {
@@ -337,7 +332,7 @@
     padding: 5px 10px 5px;
     padding-left: 43px;
     border-radius: 20px;
-    border: 1px solid #417A82;
+    border: 1px solid #417a82;
     font-size: 13px;
     outline: none;
 }
@@ -389,12 +384,12 @@
     width: 100%;
     margin-left: auto;
     margin-right: 0;
-    background-color: #417A82;
+    background-color: #417a82;
     position: relative;
 }
 
 .popular__inner::before {
-    content: 'Популярное';
+    content: "Популярное";
     font-style: italic;
     font-weight: 400;
     font-size: 300px;
@@ -414,7 +409,7 @@
     content: "";
     width: 160px;
     height: 100%;
-    background-color: #052E4C;
+    background-color: #052e4c;
     position: absolute;
     right: 0;
     top: 0;
@@ -499,11 +494,11 @@
     color: #ffffff;
 }
 
-
-.products{
+.products {
     max-width: 1368px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 171px;
 }
 
 .products-slider__wrapper {
@@ -536,7 +531,7 @@
     object-fit: contain;
 }
 
-.products__cards{
+.products__cards {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -558,8 +553,6 @@
     overflow: hidden;
     position: relative;
 }
-
-
 
 .products__card-img {
     object-fit: contain;
@@ -601,7 +594,6 @@
     margin-right: 43px;
     display: flex;
     justify-content: flex-start;
-
 }
 
 .products__card-info-inner img {
@@ -633,7 +625,6 @@
 
 .products__card-items {
     display: flex;
-
 }
 
 .products__card-item {
@@ -694,7 +685,6 @@
     font-weight: 400;
 }
 
-
 .products__card-price span {
     display: inline-block;
 }
@@ -710,7 +700,7 @@
     font-style: normal;
     position: relative;
     color: rgba(5, 46, 76, 1);
-    opacity: 0.20;
+    opacity: 0.2;
 }
 
 .products__card-old-price::after {
@@ -743,4 +733,185 @@
     text-align: center;
     color: #052e4c;
     border: 1px solid #052e4c;
+}
+
+.footer {
+    padding: 48px 0 24px;
+    flex: 0 0 auto;
+    background-color: #262626;
+    color: #fff;
+}
+
+.footer__inner {
+    padding-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer__inner::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__pages {
+    max-width: 277px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__items--mr {
+    margin-right: 157px;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+}
+
+.footer__item + .footer__item {
+    margin-top: 15px;
+}
+
+.footer__info {
+    max-width: 317px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__logo {
+    font-weight: 400;
+    font-size: 33px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer__address {
+    margin-top: 26px;
+}
+
+.footer__local {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footer__time-wrap {
+    margin-bottom: 28px;
+}
+
+.footer__time {
+    max-width: 152px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    font-style: normal;
+}
+.footer__time span {
+    display: block;
+}
+.footer__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__tel {
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    font-style: normal;
+    font-family: "Cormorant Infant", serif;
+}
+
+.footer__tel--mr {
+    margin-right: 22px;
+}
+
+.footer__box {
+    max-width: 237px;
+    width: 100%;
+}
+
+.footer__calculator {
+    padding: 11px 76px;
+    margin-bottom: 61px;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.footer__email-wrap {
+    margin-bottom: 24px;
+    max-width: 82px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    font-style: normal;
+}
+
+.footer__email {
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    font-style: normal;
+}
+
+.footer__social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-media-link {
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    font-style: normal;
+    transition: color 0.5s;
+}
+
+.footer__social-media-link:hover {
+    color: #417a82;
+}
+
+.footer__rights {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rights-items{
+    display: flex;
+    max-width: 450px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.footer__rights-link{
+    color: #fff;
+}
+
+.footer__rights-item + .footer__rights-item{
+    margin-left: 16px;
+}
+
+.footer__rights-author{
+    opacity: 0.5;
 }

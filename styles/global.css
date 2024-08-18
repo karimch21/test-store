@@ -5,11 +5,13 @@
 body,
 html {
     box-sizing: inherit;
+    height: 100%;
 }
 
-body{
+body {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
+    font-size: 13px;
 }
 
 p,
@@ -28,27 +30,41 @@ ol,
     margin: 0;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
     list-style: none;
 }
 
 a {
     text-decoration: none;
     font-family: inherit;
+    transition: color 0.5s;
 }
 
-.wrapper{
+a:hover {
+    color: #417a82;
+}
+
+.wrapper {
     overflow-x: hidden;
+    flex: 1 0 auto;
 }
 
-.container{
+.box{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
     padding: 0 10px;
     margin: 0 auto;
     width: 100%;
     max-width: 1120px;
 }
 
-button{
+button {
     border: none;
     cursor: pointer;
     background-color: transparent;
