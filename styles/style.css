@@ -441,6 +441,7 @@
     background-repeat: no-repeat;
     min-height: 240px;
     display: block;
+    cursor: pointer;
 }
 
 .popular__item-grids-1 {
@@ -598,12 +599,6 @@
 
 .products__card-info-inner {
     margin-right: 43px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.products__card-info-inner img {
-    max-width: 32px;
 }
 
 .products__card-discount {
