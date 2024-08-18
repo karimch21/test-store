@@ -499,17 +499,248 @@
     color: #ffffff;
 }
 
-.products-slider__slide{
-    max-width: 224px;
+
+.products{
+    max-width: 1368px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.products-slider__wrapper {
     width: 100%;
 }
 
-.products-slider__img-wrap{
+.products-slider__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 75px;
+}
+
+.products-slider__pagination {
+    font-weight: 400;
+    font-size: 13px;
+    color: #052e4c;
+}
+
+.products-slider__btn {
+    margin: 0;
+    position: static;
+    height: 16px;
+    width: 16px;
+}
+
+.products-slider__btn img {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+}
+
+.products__cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* .products__card + .products__card{
+    margin-left: 64px;
+} */
+
+.products__card {
+    max-width: 224px;
+    width: 100% !important;
+}
+
+.products__card-inner {
+    margin-bottom: 24px;
     max-width: 224px;
     width: 100%;
     max-height: 278px;
     overflow: hidden;
+    position: relative;
 }
-.products-slider__img{
+
+
+
+.products__card-img {
     object-fit: contain;
+    max-width: 224px;
+}
+
+.products__box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.products__head {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #052e4c;
+    width: 50%;
+}
+
+.products-slider__pagination {
+    position: static;
+    width: auto;
+}
+
+.products__card-info {
+    position: absolute;
+    left: 16px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    max-width: 191px;
+    width: 100%;
+}
+
+.products__card-info-inner {
+    margin-right: 43px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.products__card-info-inner img {
+    max-width: 32px;
+}
+
+.products__card-discount {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #b84c74;
+    font-family: "Cormorant Infant", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.products__card-view {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.products__card-items {
+    display: flex;
+
+}
+
+.products__card-item {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+}
+
+.products__card-item--active::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-image: url(../img/product-circle-acvtive.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products__card-item-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #417a82;
+    width: 100%;
+    height: 100%;
+}
+
+.products__card-item {
+    font-size: 0;
+}
+
+.products__card-discount--ml {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.products__card-title {
+    margin-bottom: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    font-size: 16px;
+    color: #052e4c;
+    white-space: nowrap;
+}
+
+.products__card-price {
+    margin-bottom: 17px;
+    font-family: "Cormorant", serif;
+    color: #052e4c;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.products__card-price span {
+    display: inline-block;
+}
+
+.products__card-current-price {
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.products__card-old-price {
+    font-size: 32px;
+    font-style: normal;
+    position: relative;
+    color: rgba(5, 46, 76, 1);
+    opacity: 0.20;
+}
+
+.products__card-old-price::after {
+    content: "";
+    width: 100%;
+    max-width: 67px;
+    height: 1px;
+    background-color: #b84c74;
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-29deg);
+}
+
+.products__card-from-price {
+    margin-right: 12px;
+}
+
+.products__card-design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products__card-design-btn {
+    padding: 11px 21px;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #052e4c;
+    border: 1px solid #052e4c;
 }

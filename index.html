@@ -612,40 +612,557 @@
 
         <section class="products">
             <div class="container products__container">
-                <div class="products-slider swiper">
 
-                    <div class="promo-slider__wrapper swiper-wrapper">
-                        <article class="products-slider__slide swiper-slide">
-                            <div class="products-slider__img-wrap">
-                                <img class="products-slider__img swiper-slide__img" src="./img/product1.jpg">
-                            </div>
-                        </article>
-                        <article class="products-slider__slide swiper-slide">
-                            <div class="products-slider__img-wrap">
-                                <img class="products-slider__img swiper-slide__img" src="./img/product2.jpg">
-                            </div>
-                        </article>
-                        <article class="products-slider__slide swiper-slide">
-                            <div class="products-slider__img-wrap">
-                                <img class="products-slider__img swiper-slide__img" src="./img/product3.jpg">
-                            </div>
-                        </article>
-
-                        <article class="products-slider__slide swiper-slide">
-                            <div class="products-slider__img-wrap">
-                                <img class="products-slider__img swiper-slide__img" src="./img/product4.jpg">
-                            </div>
-                        </article>
+                <div class="products-slider swiper" pagination="true" pagination-type="fraction">
+                    <div class="products__box">
+                        <div class="products__head">Лучшие предложения</div>
+                        <div class="products-slider__btn-wrap">
+                            <div class="products-slider__prev products-slider__btn swiper-button-prev swiper-button"><img
+                                    src="./img/promo-slider-prev.svg" alt=""></div>
+                            <div class="products-slider__pagination swiper-pagination"></div>
+                            <div class="products-slider__next products-slider__btn swiper-button-next swiper-button"><img
+                                    src="./img/promo-slider-next.svg" alt=""></div>
+                        </div>
 
                     </div>
-
-
-                    <div class="products-slider__btn-wrap">
-                        <div class="products-slider__prev promo-slider__btn swiper-button-prev swiper-button"><img
-                                src="./img/promo-slider-prev.svg" alt=""></div>
-                        <div class="products-slider__pagination swiper-pagination"></div>
-                        <div class="products-slider__next promo-slider__btn swiper-button-next swiper-button"><img
-                                src="./img/promo-slider-next.svg" alt=""></div>
+                    <div class="products-slider__wrapper swiper-wrapper">
+                        <div class="products__cards swiper-slide">
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product1.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount"><span>-10%</span></div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item products__card-item--active"> <img
+                                                    src="./img/product-green1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"><img src="./img/product-white1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"><img src="./img/product-silver2.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-green2.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+    
+                                            <li class="products__card-item">
+                                                <button class="products__card-item-btn"><img src="./img/arrow-down.svg"
+                                                        alt=""></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem»
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product2.jpg">
+                                    <div class="products__card-info">
+    
+                                        <div src="" alt="" class="products__card-discount products__card-discount--ml">-10%
+                                        </div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item products__card-item--active"> <img
+                                                    src="./img/product-brown.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"><img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem». Длинное название в три строчки</div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product3.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount">-10%</div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+    
+                                            <li class="products__card-item products__card-item--active"><img
+                                                    src="./img/product-white1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+    
+                                            <li class="products__card-item"> <img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem»
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">8000₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product4.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount">-10%</div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+    
+                                            <li class="products__card-item products__card-item--active"><img
+                                                    src="./img/product-white1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Короткое название
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="products__cards swiper-slide">
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product1.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount"><span>-10%</span></div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item products__card-item--active"> <img
+                                                    src="./img/product-green1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"><img src="./img/product-white1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"><img src="./img/product-silver2.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-green2.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+    
+                                            <li class="products__card-item">
+                                                <button class="products__card-item-btn"><img src="./img/arrow-down.svg"
+                                                        alt=""></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem»
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product2.jpg">
+                                    <div class="products__card-info">
+    
+                                        <div src="" alt="" class="products__card-discount products__card-discount--ml">-10%
+                                        </div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item products__card-item--active"> <img
+                                                    src="./img/product-brown.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"><img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem». Длинное название в три строчки</div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product3.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount">-10%</div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+    
+                                            <li class="products__card-item products__card-item--active"><img
+                                                    src="./img/product-white1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+    
+                                            <li class="products__card-item"> <img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem»
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">8000₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product4.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount">-10%</div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+    
+                                            <li class="products__card-item products__card-item--active"><img
+                                                    src="./img/product-white1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Короткое название
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="products__cards swiper-slide">
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product1.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount"><span>-10%</span></div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item products__card-item--active"> <img
+                                                    src="./img/product-green1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"><img src="./img/product-white1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"><img src="./img/product-silver2.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-green2.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+    
+                                            <li class="products__card-item">
+                                                <button class="products__card-item-btn"><img src="./img/arrow-down.svg"
+                                                        alt=""></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem»
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product2.jpg">
+                                    <div class="products__card-info">
+    
+                                        <div src="" alt="" class="products__card-discount products__card-discount--ml">-10%
+                                        </div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item products__card-item--active"> <img
+                                                    src="./img/product-brown.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"><img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem». Длинное название в три строчки</div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product3.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount">-10%</div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+    
+                                            <li class="products__card-item products__card-item--active"><img
+                                                    src="./img/product-white1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+    
+                                            <li class="products__card-item"> <img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Вертикальные жалюзи
+                                        «Lorem»
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">8000₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="products__card">
+                                <div class="products__card-inner">
+                                    <img class="products__card-img swiper-slide__img" src="./img/product4.jpg">
+                                    <div class="products__card-info">
+                                        <div class="products__card-info-inner">
+                                            <img src="./img/product-circle.svg" alt="" class="products__card-curcle">
+                                            <img src="./img/product-percent.svg" alt="" class="products__card-percent">
+                                            <img src="./img/products-width.svg" alt="" class="products__card-width">
+                                        </div>
+                                        <div src="" alt="" class="products__card-discount">-10%</div>
+                                    </div>
+    
+                                    <div class="products__card-view">
+                                        <ul class="products__card-items">
+                                            <li class="products__card-item">
+                                                <img src="./img/product-silver.jpg" alt="" class="products__card-item-img">
+                                            </li>
+    
+                                            <li class="products__card-item products__card-item--active"><img
+                                                    src="./img/product-white1.jpg" alt="" class="products__card-item-img">
+                                            </li>
+                                            <li class="products__card-item"> <img src="./img/product-brown.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                            <li class="products__card-item"> <img src="./img/product-green1.jpg" alt=""
+                                                    class="products__card-item-img"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="products__card-data">
+                                    <div class="products__card-title">Короткое название
+                                    </div>
+                                    <div class="products__card-price">
+                                        <span class="products__card-from-price">от</span>
+                                        <span class="products__card-current-price">1200₽</span>
+                                        <span class="products__card-old-price">1000₽</span>
+                                    </div>
+                                    <div class="products__card-design">
+                                        <button class="products__card-design-btn">оформить заявку</button>
+                                        <a href="#" class="products__card-basket"><img src="./img/product-basket.svg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
