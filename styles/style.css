@@ -250,12 +250,18 @@
     min-width: 224px;
     width: 100%;
     position: absolute;
-    left: -100%;
+    left: -50%;
     top: 0;
     z-index: 10000;
     background-color: #fefefe;
     align-items: flex-start;
     overflow-y: auto;
+    transition: left 0.4s;
+}
+
+.header-main__hidden--active{
+    left: 0%;
+    transition: left 0.4s;
 }
 
 .hidden-menu__wrap {
