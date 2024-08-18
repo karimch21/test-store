@@ -1,10 +1,12 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body,
 html {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     height: 100%;
 }
 
@@ -39,21 +41,26 @@ ol {
 a {
     text-decoration: none;
     font-family: inherit;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
     transition: color 0.5s;
-}
-
-a:hover {
-    color: #417a82;
 }
 
 .wrapper {
     overflow-x: hidden;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 .box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100%;
 }
 
